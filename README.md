@@ -6,6 +6,7 @@ Plain HTML and CSS: no build step, framework or tracking. Open `index.html` in a
 
 - `index.html` — landing page
 - `privacy.html` — privacy policy (use its URL for App Store Connect)
+- `support.html` — support page with help and contact (use its URL as the App Store Connect Support URL)
 - `styles.css` — styles; colours match the app's asset catalog, in light and dark mode
 - `assets/` — app icon, screenshots and wallpaper renders, all made from the app itself
 
