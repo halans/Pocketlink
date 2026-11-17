@@ -17,7 +17,6 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-## Before launch
+## Maintenance
 
-- Replace the "Coming soon to the App Store" badges with Apple's official Download on the App Store badge and the app's App Store link once it's live.
 - Keep `privacy.html` in step with the app's `docs/PRIVACY.md`.

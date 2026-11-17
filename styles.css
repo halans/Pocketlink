@@ -98,18 +98,9 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
 .cta-note { margin: 0; color: var(--text-secondary); font-size: 0.95rem; }
 
-.badge-soon {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: var(--accent); color: var(--on-accent);
-  font: 700 1rem var(--rounded);
-  padding: 14px 22px; border-radius: 999px;
-}
-.badge-soon::before {
-  content: ""; width: 18px; height: 18px; flex: none;
-  background: currentColor;
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='6' y='2' width='12' height='20' rx='3'/%3E%3Cpath d='M10 5h4'/%3E%3C/svg%3E") center / contain no-repeat;
-          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='6' y='2' width='12' height='20' rx='3'/%3E%3Cpath d='M10 5h4'/%3E%3C/svg%3E") center / contain no-repeat;
-}
+.app-store-badge { display: inline-block; line-height: 0; border-radius: 12px; }
+.app-store-badge img { display: block; width: 180px; height: 60px; }
+.app-store-badge:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 
 .hero-art { position: relative; min-height: 560px; }
 .phone {
