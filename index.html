@@ -3,18 +3,104 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pocketlink: your contact card on your Lock Screen</title>
+  <title>Pocketlink: QR Code Lock Screen Wallpaper for iPhone</title>
   <meta name="description" content="Pocketlink turns your contact details or a link into an iPhone wallpaper with a QR code. Free, no account, made entirely on your iPhone.">
+  <link rel="canonical" href="https://halans.github.io/Pocketlink/">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#F5F5EF" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#1C1D20" media="(prefers-color-scheme: dark)">
-  <meta property="og:title" content="Pocketlink">
-  <meta property="og:description" content="Your contact card on your Lock Screen. One scan saves your details.">
-  <meta property="og:image" content="assets/icon-512.png">
-  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pocketlink">
+  <meta property="og:title" content="Pocketlink: your contact card on your Lock Screen">
+  <meta property="og:description" content="Turn your contact details into an iPhone wallpaper with a QR code. One scan saves your details. Free, no account.">
+  <meta property="og:url" content="https://halans.github.io/Pocketlink/">
+  <meta property="og:image" content="https://halans.github.io/Pocketlink/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pocketlink: your contact card on your Lock Screen. A wallpaper with a QR code, shown in the app on iPhone.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/favicon-96.png" type="image/png" sizes="96x96">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <meta name="apple-itunes-app" content="app-id=6835361992">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Pocketlink",
+  "description": "Pocketlink turns your contact details or a link into an iPhone Lock Screen wallpaper with a QR code. Free, no account, made entirely on your iPhone.",
+  "url": "https://halans.github.io/Pocketlink/",
+  "image": "https://halans.github.io/Pocketlink/assets/icon-512.png",
+  "operatingSystem": "iOS 27",
+  "applicationCategory": "UtilitiesApplication",
+  "downloadUrl": "https://apps.apple.com/app/pocketlink/id6835361992",
+  "installUrl": "https://apps.apple.com/app/pocketlink/id6835361992",
+  "screenshot": [
+    "https://halans.github.io/Pocketlink/assets/app-preview-light.jpg",
+    "https://halans.github.io/Pocketlink/assets/app-editor-dark.jpg",
+    "https://halans.github.io/Pocketlink/assets/wallpaper-iphone.jpg"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "JJ Halans"
+  },
+  "inLanguage": "en"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Pocketlink free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every feature is free, with no subscription, no purchase and no watermark. Make as many wallpapers as you like."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when someone scans the code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They point their iPhone camera at your Lock Screen. A contact card code offers to save your details. A website-only code opens your link, such as your LinkedIn profile or Linktree page. They don’t need Pocketlink."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the QR code work on the Lock Screen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Show it from the Lock Screen, where app icons can’t cover it, keep Lock Screen widgets clear of the code, and turn the brightness up when someone scans it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I add my contact card to Apple Wallet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with Wallet’s own Create a Pass, which needs iOS 27 on an iPhone with Apple Intelligence. Save your wallpaper in Pocketlink, then choose your saved wallpaper in Wallet’s Create a Pass."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are my details stored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only on your iPhone. Pocketlink has no account, ads, analytics or server, and your details are excluded from backup. Anyone who scans the code can read what it shares, so only include what you’re happy to give out."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -27,6 +113,7 @@
     <nav aria-label="Page">
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
+      <a href="guide.html">Guide</a>
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>
     </nav>
@@ -35,7 +122,7 @@
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">For iPhone</p>
+        <p class="eyebrow">QR code wallpaper for iPhone</p>
         <h1 id="hero-title">Your contact card, on your Lock Screen.</h1>
         <p class="lede">Pocketlink turns your details into a wallpaper with a QR code. People point their camera at your phone to save your contact or open your link — no app, no typing, no business cards.</p>
         <div class="cta">
@@ -50,12 +137,18 @@
       </div>
       <div class="hero-art">
         <figure class="phone phone--front">
-          <img src="assets/app-preview-light.jpg" width="506" height="1100"
+          <picture>
+            <source srcset="assets/app-preview-light.webp" type="image/webp">
+            <img src="assets/app-preview-light.jpg" width="506" height="1100" fetchpriority="high"
                alt="Pocketlink showing a full preview of a purple wallpaper with Alex Morgan's name, role and a QR code, under the Lock Screen clock.">
+          </picture>
         </figure>
         <figure class="phone phone--back">
-          <img src="assets/app-editor-dark.jpg" width="506" height="1100"
+          <picture>
+            <source srcset="assets/app-editor-dark.webp" type="image/webp">
+            <img src="assets/app-editor-dark.jpg" width="506" height="1100"
                alt="Pocketlink in dark mode: a thumbnail of the wallpaper above the Edit card, with fields for name, role and email." loading="lazy">
+          </picture>
         </figure>
       </div>
     </section>
@@ -122,16 +215,49 @@
       <p class="section-lede">On the iPhone Duo outer display, the code sits beside the clock and your details run alongside it.</p>
       <div class="showcase-art">
         <figure>
-          <img src="assets/wallpaper-iphone.jpg" width="506" height="1100" loading="lazy"
-               alt="A Pocketlink wallpaper for iPhone: a centred card with Alex Morgan, Designer &amp; maker, a QR code, a Scan to save contact badge and a tagline.">
+          <picture>
+            <source srcset="assets/wallpaper-iphone.webp" type="image/webp">
+            <img src="assets/wallpaper-iphone.jpg" width="506" height="1100" loading="lazy"
+                 alt="A Pocketlink wallpaper for iPhone: a centred card with Alex Morgan, Designer &amp; maker, a QR code, a Scan to save contact badge and a tagline.">
+          </picture>
           <figcaption>iPhone</figcaption>
         </figure>
         <figure>
-          <img src="assets/wallpaper-duo.jpg" width="687" height="1000" loading="lazy"
-               alt="A Pocketlink wallpaper for the iPhone Duo outer display: the QR code on the left and the name, role and contact details on the right.">
+          <picture>
+            <source srcset="assets/wallpaper-duo.webp" type="image/webp">
+            <img src="assets/wallpaper-duo.jpg" width="687" height="1000" loading="lazy"
+                 alt="A Pocketlink wallpaper for the iPhone Duo outer display: the QR code on the left and the name, role and contact details on the right.">
+          </picture>
           <figcaption>iPhone Duo outer display</figcaption>
         </figure>
       </div>
+    </section>
+
+    <section id="faq" class="section faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions about Pocketlink</h2>
+      <div class="faq-list">
+        <div>
+          <h3>Is Pocketlink free?</h3>
+          <p>Yes. Every feature is free, with no subscription, no purchase and no watermark. Make as many wallpapers as you like.</p>
+        </div>
+        <div>
+          <h3>What happens when someone scans the code?</h3>
+          <p>They point their iPhone camera at your Lock Screen. A contact card code offers to save your details. A website-only code opens your link, such as your LinkedIn profile or Linktree page. They don’t need Pocketlink.</p>
+        </div>
+        <div>
+          <h3>Does the QR code work on the Lock Screen?</h3>
+          <p>Yes. Show it from the Lock Screen, where app icons can’t cover it, keep Lock Screen widgets clear of the code, and turn the brightness up when someone scans it.</p>
+        </div>
+        <div>
+          <h3>Can I add my contact card to Apple Wallet?</h3>
+          <p>Yes, with Wallet’s own Create a Pass, which needs iOS 27 on an iPhone with Apple Intelligence. Save your wallpaper in Pocketlink, then choose your saved wallpaper in Wallet’s Create a Pass.</p>
+        </div>
+        <div>
+          <h3>Where are my details stored?</h3>
+          <p>Only on your iPhone. Pocketlink has no account, ads, analytics or server, and your details are excluded from backup. Anyone who scans the code can read what it shares, so only include what you’re happy to give out.</p>
+        </div>
+      </div>
+      <p class="section-lede">More answers in the <a href="support.html">support page</a>, or read <a href="guide.html">how to put a QR code on your iPhone Lock Screen</a>.</p>
     </section>
 
     <section class="section closing" aria-labelledby="closing-title">
@@ -148,7 +274,7 @@
 
   <footer class="site-footer">
     <p>© 2026 JJ Halans. Pocketlink is free and made entirely on your iPhone.</p>
-    <p><a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></p>
+    <p><a href="guide.html">Guide</a> · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a> · <a href="https://github.com/halans/Pocketlink">Source on GitHub</a></p>
     <p class="fine">iPhone, Apple Wallet and App Store are trademarks of Apple Inc.</p>
   </footer>
 </body>

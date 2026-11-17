@@ -48,6 +48,7 @@ body {
 }
 
 img { max-width: 100%; height: auto; display: block; }
+picture { display: block; }
 
 a { color: var(--accent); }
 a:focus-visible, .skip-link:focus-visible {
@@ -163,6 +164,16 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 .showcase-art figure:last-child img { width: 400px; }
 .showcase-art figcaption { margin-top: 12px; color: var(--text-secondary); font: 600 0.95rem var(--rounded); }
 
+.faq-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 40px; }
+.faq-list > div {
+  background: var(--surface); border: 0.5px solid var(--hairline);
+  border-radius: var(--radius-large); box-shadow: var(--shadow); padding: 24px;
+}
+.faq-list > div:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.faq-list p { color: var(--text-secondary); margin: 8px 0 0; }
+.faq .section-lede { margin-top: 28px; }
+@media (max-width: 700px) { .faq-list { grid-template-columns: 1fr; } }
+
 .closing { text-align: center; display: grid; justify-items: center; gap: 20px; padding-bottom: 96px; }
 .closing img { border-radius: 22px; box-shadow: var(--shadow); }
 
@@ -203,3 +214,8 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 .prose h3 { font-size: 1.1rem; margin: 24px 0 4px; }
 .prose p, .prose li { color: var(--text-secondary); }
 .prose .updated { color: var(--text-secondary); font-size: 0.95rem; margin-top: 0; }
+
+/* Guide and 404 */
+.prose ol { padding-left: 1.4em; }
+.prose .cta { margin-top: 24px; }
+.prose .breadcrumb { font-size: 0.9rem; margin: 0 0 12px; color: var(--text-secondary); }

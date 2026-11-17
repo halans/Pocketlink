@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://halans.github.io/Pocketlink/sitemap.xml
