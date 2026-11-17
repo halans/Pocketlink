@@ -81,10 +81,19 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   font: 700 1.15rem var(--rounded);
 }
 .brand img { border-radius: 8px; }
-.site-header nav { display: flex; gap: 24px; }
-.site-header nav a { color: var(--text-secondary); text-decoration: none; font-weight: 500; }
-.site-header nav a:hover { color: var(--text); }
-@media (max-width: 560px) { .site-header nav a:not(:last-child) { display: none; } }
+.site-header nav { display: flex; flex-wrap: wrap; gap: 0 8px; }
+.site-header nav a {
+  color: var(--text-secondary); text-decoration: none; font-weight: 500;
+  padding: 10px 8px; /* 44px-tall tap targets */
+}
+.site-header nav a:hover, .site-header nav a[aria-current="page"] { color: var(--text); }
+.site-header nav a[aria-current="page"] { font-weight: 700; }
+/* Phones: logo on top, every link on a row beneath it. */
+@media (max-width: 700px) {
+  .site-header { flex-direction: column; align-items: flex-start; gap: 4px; padding: 16px 16px 8px; }
+  .site-header nav { margin: 0 -6px; gap: 0; }
+  .site-header nav a { padding: 10px 6px; font-size: 0.9rem; }
+}
 
 /* Hero */
 .hero {
